@@ -1,4 +1,4 @@
-# ReactNative BitcoinJS (react-native-bitcoinjs-lib)
+# ReactNative BitcoinJS (react-native-expo-bitcoinjs-lib)
 
 [![Build Status](https://travis-ci.org/bitcoinjs/bitcoinjs-lib.png?branch=master)](https://travis-ci.org/bitcoinjs/bitcoinjs-lib)
 [![NPM](https://img.shields.io/npm/v/bitcoinjs-lib.svg)](https://www.npmjs.org/package/bitcoinjs-lib)
@@ -27,43 +27,19 @@ Used by over a million wallet users and the backbone for almost all Bitcoin web 
 
 ## Installation
 
-`npm i react-native-bitcoinjs-lib --save`
+`yarn add react-native-expo-bitcoinjs-lib`
 
 
 ## Setup
 
-Create the react native project.
-
-`react-native init fooApp`
-
-Install rn-nodeify to be able to use Node.js libs.
-
-`npm i rn-nodeify -g`
-
-Add this postinstall script to install & hack the Node.js libs for the usage in React Native.
-
-`"postinstall": "rn-nodeify --install stream,buffer,events,assert --hack"`
-
-Install & link required dependencies.
-
-`npm i react-native-bitcoinjs-lib react-native-randombytes --save && react-native link react-native-randombytes`
-
-Run the postinstall, it will create a shim.js file which you need to include in your index file (see Usage).
-
-`npm run postinstall`
-
-Run the app
-
-`react-native run-android` or `react-native run-ios`
+`yarn addreact-native-expo-bitcoinjs-lib expo-random`
 
 ## Usage
 
 Edit index.android.js and index.ios.js
 
 ```javascript
-// node.js libs
-import './shim' // make sure to use es6 import and not require()
-import Bitcoin from 'react-native-bitcoinjs-lib'
+import Bitcoin from 'react-native-expo-bitcoinjs-lib'
 [...]
 const keypair = Bitcoin.ECPair.makeRandom()
 console.log(keypair.getAddress()) // your brand new base58-encoded Bitcoin address
@@ -88,7 +64,7 @@ Run the example app or refer to the [original repository](https://github.com/bit
 - [Robocoin](https://wallet.robocoin.com)
 - [Skyhook ATM](http://projectskyhook.com)
 
-## Projects utilizing BitcoinJS [for React Native](https://github.com/nexustech-solutions/react-native-bitcoinjs-lib)
+## Projects utilizing BitcoinJS [for React Native](https://github.com/nexustech-solutions/react-native-expo-bitcoinjs-lib)
 
 - [ReactNative Bitcoin Wallet](https://github.com/nexustech-solutions/react-native-bitcoin-wallet)
 

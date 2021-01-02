@@ -1,4 +1,4 @@
-var createHmac = require('react-native-crypto').createHmac
+var createHmac = require('react-native-expo-crypto').createHmac
 var typeforce = require('typeforce')
 var types = require('./types')
 

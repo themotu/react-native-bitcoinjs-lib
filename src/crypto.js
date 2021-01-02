@@ -1,4 +1,4 @@
-var createHash = require('react-native-crypto').createHash
+var createHash = require('react-native-expo-crypto').createHash
 
 function ripemd160 (buffer) {
   return createHash('rmd160').update(buffer).digest()
