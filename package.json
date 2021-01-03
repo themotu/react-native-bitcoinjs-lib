@@ -1,6 +1,6 @@
 {
   "name": "react-native-expo-bitcoinjs-lib",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "Client-side Bitcoin JavaScript library for React Native using Expo Random",
   "main": "./src/index.js",
   "engines": {
@@ -71,6 +71,7 @@
     "merkle-lib": "^2.0.10",
     "pushdata-bitcoin": "^1.0.1",
     "react-native-expo-crypto": "^2.0.1",
+    "typedarray-to-buffer": "^4.0.0",
     "typeforce": "^1.8.7",
     "varuint-bitcoin": "^1.0.4",
     "wif": "^2.0.1"

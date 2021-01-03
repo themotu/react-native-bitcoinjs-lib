@@ -1,7 +1,10 @@
 var baddress = require('./address')
 var bcrypto = require('./crypto')
 var ecdsa = require('./ecdsa')
-var randomBytes = require('expo-random').getRandomBytes
+var toBuffer = require('typedarray-to-buffer');
+var randomBytesArray = require('expo-random').getRandomBytes
+var randomBytes = toBuffer(randomBytesArray)
+
 var typeforce = require('typeforce')
 var types = require('./types')
 var wif = require('wif')
